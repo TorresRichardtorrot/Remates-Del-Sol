@@ -1,0 +1,20 @@
+.social__content{
+    position: fixed;
+    right: 3px;
+    z-index: 6;
+    top: 120px;
+    display: none;
+}
+.social__content img{
+    width: 35px;
+}
+.social__content ul{
+    padding: 5px;
+    background-color: white;
+    border-radius: 15px;
+    list-style: none;
+    box-shadow: 0px 4px 4.46881px 0px rgba(0, 0, 0, 0.25);
+}
+.show{
+    display: block;
+}

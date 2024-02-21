@@ -1,0 +1,18 @@
+.contact{
+    margin-top: 40px;
+}
+.contact h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact__form__map{
+    display: flex;
+}
+.contact__form__map > *{
+    flex: 1;
+}
+.contact__map{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,18 @@
+.main__button{
+    font-size: inherit;
+    font-weight: 500;
+    padding: 5px;
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    background-color: var(--main-color);
+    color: white;
+    transition: all .3s ease;
+    display: flex;
+    place-content: center;
+    width: 100%;
+}
+.main__button:hover{
+    background-color: transparent;
+    color: var(--main-color);
+    cursor: pointer;
+}

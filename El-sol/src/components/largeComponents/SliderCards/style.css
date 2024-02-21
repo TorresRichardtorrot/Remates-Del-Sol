@@ -1,0 +1,24 @@
+.about .swiper {
+  width: 350px;
+  height: 450px;
+  
+}
+.about .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background-color: black;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+.about .swiper-slide{
+    
+    box-shadow: 0.4px 0.4px 10px rgb(0 0 0 / 22%);
+}
+.about .swiper-slide img{
+    width: 100%;
+    border-radius: 4px;
+}
+

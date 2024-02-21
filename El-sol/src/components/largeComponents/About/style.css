@@ -1,0 +1,24 @@
+.about{
+    margin-top: 50px;
+    display: flex;
+    font-size: 1.7rem;
+}
+/* ? Para que sus hijos ocupen el mismo espacio */
+.about > * {
+    flex: 1;
+}
+.about h2:last-child{
+    text-align: center;
+}
+.about__our__auctions h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.about__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about button {
+    font-size: 2.2rem;
+}
