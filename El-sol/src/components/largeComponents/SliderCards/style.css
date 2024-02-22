@@ -22,3 +22,13 @@
     border-radius: 4px;
 }
 
+@media (max-width:985px) {
+
+  .about .swiper {
+    width: 200px;
+    height: 250px;
+  }
+
+
+  
+}
