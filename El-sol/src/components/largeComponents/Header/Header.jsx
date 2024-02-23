@@ -43,9 +43,7 @@ function Header() {
                             Contacto
                         </a>
                     </li>
-                    <li>
-                       <img src="" alt="" />       
-                    </li>
+                   
                     {
                         <li>
 

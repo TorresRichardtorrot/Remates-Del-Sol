@@ -4,6 +4,7 @@ import About from "../components/largeComponents/About/About";
 import NextAuction from "../components/largeComponents/NextAuction/NextAuction";
 import History from "../components/largeComponents/History/History";
 import Contact from "../components/largeComponents/Contact/Contact";
+import Footer from "../components/largeComponents/Footer/Footer";
 
 function LandingPage() {
     return (
@@ -14,6 +15,7 @@ function LandingPage() {
             <NextAuction/>
             <History/>
             <Contact/>
+            <Footer/>
         </>
     );
 }
