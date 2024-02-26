@@ -16,3 +16,35 @@
     display: flex;
     justify-content: center;
 }
+.container__form{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+.container__form form{
+    background-color: aqua;
+    padding: 20px;
+}
+
+.box__input{
+    padding:5px;
+    background-color: white;
+    position: relative;
+}
+.box__input input{
+    border: none;
+    outline: none;
+}
+.box__input label{
+    position: absolute;
+    transition: all 3s ease;
+    left: 0;
+}
+.box__input ,input:focus ~ label,
+.box__input input:active ~ label{
+    top: -15px;
+}
+.container__input{
+    gap: 10px;
+    display: flex;
+}

@@ -22,6 +22,7 @@
 .about button {
     font-size: 2.2rem;
 }
+
 @media (max-width: 985px) {
     .about { 
         flex-direction: column-reverse;        
@@ -33,7 +34,4 @@
     {
         padding: 0;
     }
-    
-
-    
 }
