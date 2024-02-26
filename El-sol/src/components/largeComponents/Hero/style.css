@@ -1,11 +1,19 @@
 .hero{
     position: relative;
     width: 100%;
+    height: 600px;
+    background-color: rgb(255, 103, 103);
     
 }
-.hero img {
+.hero .vector-1 {
     width: 100%;
+    position: absolute;
+    bottom: -2px;
+    height: 90px;
+    user-select: none;
     object-fit: cover;
+    pointer-events: none;
+    /* z-index: 10; */
 }
 
 .hero__title__main{
@@ -17,12 +25,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 70px;
+    gap: 50px;
     height: 100%;
     width: 100%;
-    background-image: url('./src/assets/sol.png');
-    background-repeat: no-repeat;
-    background-position: center;
+
 
 }
 .hero__title__main h1{
@@ -33,5 +39,5 @@
 .hero__title__main h2{
     font-size: 4rem; 
     font-weight: 200;  
-   }
-   
+}
+

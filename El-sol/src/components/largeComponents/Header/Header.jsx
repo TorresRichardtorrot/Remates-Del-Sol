@@ -24,7 +24,7 @@ function Header() {
     return (
         <header className={`main__header ${scrolling? 'header--active':""}`}>
             <Link className='main__header--logo' to={'/'}>
-                <img src="/src/assets/logo-2-m.png" alt="Logo de Remates El Sol" />
+                <img src="/src/assets/sol.png" alt="Logo de Remates El Sol" />
             </Link>
             <nav className='main__header--nav'>
                 <ul className='header__nav--ul'>
