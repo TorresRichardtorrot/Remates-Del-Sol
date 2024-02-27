@@ -1,10 +1,15 @@
+/* eslint-disable react/prop-types */
 import './style.css'
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Social from '../Social/Social';
+import { IoIosArrowDown } from "react-icons/io";
+import { useLanguage } from '../../../hooks/useLanguage';
 
-function Header() {
+function Header({data}) {
     const [scrolling, setScrolling] = useState(false);
+    const {setLanguage}= useLanguage()
+
     
     useEffect(() => {
         const handleScroll = () => {
@@ -28,25 +33,45 @@ function Header() {
             </Link>
             <nav className='main__header--nav'>
                 <ul className='header__nav--ul'>
-                    <li>
-                        <a href="#home">
-                            Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#contact'>
-                            Contacto
-                        </a>
-                    </li>
-                   
                     {
-                        <li>
+                        data.links.map((value,index)=>{
+                            return(
+                                <li key={index}>
+                                <a href={value.to}>
+                                {value.a}
+                                </a>
+                            </li>
+                            )
+                        })
+                    }
 
+                    {
+                        <li className='header__lenguaje'>
+                            {data.language}
+                            <IoIosArrowDown />
+                            <ul>
+                                <li>
+                                    <button onClick={()=>{
+                                        setLanguage("Spanish")
+                                    }}>
+                                        <img src="/src/assets/Spain.svg" alt="" />
+                                    </button>   
+                                </li>
+                                <li>
+                                    <button onClick={()=>{
+                                        setLanguage("English")
+                                    }}>
+                                        <img src="/src/assets/ingles.svg" alt="" />
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={()=>{
+                                        setLanguage("Portuguese")
+                                    }}>
+                                        <img src="/src/assets/Brazil.svg" alt="" />
+                                    </button>
+                                </li>
+                            </ul>
                         </li>
                     }
                 </ul>

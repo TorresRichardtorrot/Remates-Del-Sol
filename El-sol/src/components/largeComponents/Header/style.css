@@ -6,11 +6,12 @@
     position: fixed;
     width: 100%;
     z-index: 5;
-    transition: all .3s ease;
+    transition: all 0.3s ease 0s;
 }
 .main__header--logo img{
     width: 80px;
     height: 65px;
+    filter: drop-shadow(0 0 1px rgba(255, 0, 0, 0.397));
 }
 .header__nav--ul{
     display: flex;
@@ -30,5 +31,58 @@
     a{
         color: black;
     }
+    .header__lenguaje{
+        color: rgb(0, 0, 0);
+    }
 
+}
+.header__lenguaje{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+
+
+}
+.header__lenguaje ul{
+    position: absolute;
+    overflow-y: hidden;
+    top: 20px;
+    right: 0;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4.46881px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    transition: all .3s ease;
+    border-radius: 5px;
+    z-index: 8;
+}
+.header__lenguaje ul button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.header__lenguaje:hover ul{
+    height: auto;
+    padding: 4px;
+
+}
+.header__lenguaje ul li{
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+.header__lenguaje ul li img{
+    width: 60px;
+    border-radius: 5px;
+}
+.header__lenguaje ul li:hover{
+    transform: scale(1.1);
 }

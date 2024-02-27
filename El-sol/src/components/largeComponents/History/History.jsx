@@ -1,27 +1,25 @@
+/* eslint-disable react/prop-types */
 import './style.css'
-function History() {
+function History({data}) {
     return (
         <section className="history container" id='about'>
-            <h2>Quienes Somos</h2>
+            <h2>{data.title}</h2>
             <div className="history__img__info">
                 <div className="history__img">
                     <img src="/src/assets/logo-2.png" alt="logo" />
                 </div>
                 <article className="history__info">
-                    <h3>More</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur,
-                         adipisicing elit. Asperiores, excepturi
-                          sunt! Natus ea dolor doloribus quis, ullam
-                           corrupti amet, soluta ipsa delectus quae quam aut.
-                    </p>
-                    <h3>More</h3>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur,
-                         adipisicing elit. Asperiores, excepturi
-                          sunt! Natus ea dolor doloribus quis, ullam
-                           corrupti amet, soluta ipsa delectus quae quam aut.
-                    </p>
+                    {
+                        data.info.map((value)=>{
+                            return(
+                                <>
+                                    <h3>{value.title}</h3>
+                                    <p>{value.text}</p>
+                                </>
+                            )
+                        })
+                    }
+                    
                 </article>
             </div>
             

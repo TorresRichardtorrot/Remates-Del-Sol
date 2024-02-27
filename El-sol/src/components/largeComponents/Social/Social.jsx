@@ -16,7 +16,7 @@ function Social({active}) {
                     </Link>
                 </li>
                 <li>
-                    <Link target="_black" >
+                    <Link target="_black" to={'https://www.instagram.com/rematesdelsol/'} >
                         <img src="/src/assets/instagram.png" alt="ir al instagram" />
                     </Link>
                 </li>

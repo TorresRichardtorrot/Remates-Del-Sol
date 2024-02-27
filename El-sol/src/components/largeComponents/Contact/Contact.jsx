@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import './style.css'
-function Contact() {
+function Contact({data}) {
     return (
         <section className='contact container' id='contact'>
-            <h2>Contacto</h2>
+            <h2>{data.title}</h2>
 
             <div className='contact__form__map'>
                 <section className='container__form'>
@@ -11,14 +12,14 @@ function Contact() {
                             <div className='box__input'>
                                 
                                 <input type="text" />
-                                <label htmlFor="">Nombre</label>
+                                <label htmlFor="">{data.label_name}</label>
                             </div>
                             <div className='box__input'>
                                 <input type="email" />
-                                <label htmlFor="">Correo</label>
+                                <label htmlFor="">{data.label_email}</label>
                             </div>
                         </div>
-                        <label htmlFor="">Mensage</label>
+                        <label htmlFor="">{data.label_messages}</label>
                         <textarea name="" id="" cols="30" rows="10">
                         </textarea>
                     </form>

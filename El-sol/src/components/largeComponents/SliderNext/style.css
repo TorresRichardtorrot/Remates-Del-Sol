@@ -2,7 +2,7 @@
     margin-top: 30px;
     padding: 0 40px;
     width: 100%;
-    height: 400px;
+    height: 450px;
 }
 .next_auction .swiper-button-prev,.swiper-button-next {
     color: var(--main-color) !important;
@@ -28,15 +28,13 @@
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit:contain; */
     border-radius: 5px;
+    user-select: none;
 }
   
 .next_auction .swiper {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(230, 230, 230);
-    box-shadow: 4px 4px 4.46881px 2px rgba(0, 0, 0, 0.25);
+  
     padding: 50px 0;
 }
   

@@ -1,4 +1,5 @@
 .next_auction{
+    position: relative;
     margin-top: 60px;
     font-size: 1.7rem;
 }
@@ -6,4 +7,29 @@
 .next_auction h2 {
     text-align: center;
     font-size: 3rem;
+}
+.separador{
+    height: 400px;
+    width: 100%;
+    margin: 40px 0;
+    background-image: url('src/assets/hero.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.title__section__main{
+    position: absolute;
+    top: -30px;
+    border-radius: 40px;
+    left: 50%;
+    box-shadow: 0 -1px 4.4px 0 rgba(0, 0, 0, 0.158);
+    background-color: white;
+    padding: 10px;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.next_auction{
+    box-shadow: 0 0 27px #80525225;
+    border-radius: 20px;
+    margin: 90px 20px;
 }

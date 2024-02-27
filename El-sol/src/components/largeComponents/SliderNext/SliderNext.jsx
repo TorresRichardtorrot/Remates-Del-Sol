@@ -11,7 +11,8 @@ export default function SliderNext() {
     <>
       <Swiper
         slidesPerView={3}
-        spaceBetween={30}
+        spaceBetween={25}
+        
         loop={true}
         pagination={{
           clickable: true,
@@ -20,18 +21,13 @@ export default function SliderNext() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><img src="/src/assets/car.webp" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/src/assets/car.webp" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/src/assets/car.webp" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/src/assets/car.webp" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/src/assets/car.webp" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/src/assets/car.webp" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/src/assets/car.webp" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/src/assets/car.webp" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/src/assets/car.webp" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/src/assets/car.webp" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/src/assets/car.webp" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/src/assets/car.webp" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="/proximo.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="/proximo.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="/proximo2.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="/proximo2.jpg" alt="" /></SwiperSlide>
+
+        
+        
       </Swiper>
     </>
   );
