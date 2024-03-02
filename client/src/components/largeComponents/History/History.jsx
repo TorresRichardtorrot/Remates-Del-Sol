@@ -6,7 +6,7 @@ function History({data}) {
             <h2>{data.title}</h2>
             <div className="history__img__info">
                 <div className="history__img">
-                    <img src="/src/assets/logo-2.png" alt="logo" />
+                    <img src="/logo-2.png" alt="logo" />
                 </div>
                 <article className="history__info">
                     {

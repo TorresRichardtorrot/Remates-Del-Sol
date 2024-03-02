@@ -8,7 +8,7 @@ function Hero({data}) {
                 <h2>{data.subTitle}</h2>
             </div>
             
-            <img className='vector-1' src="src/assets/Vector2.svg" alt="" />
+            <img className='vector-1' src="/Vector2.svg" alt="" />
         </section>
     );
 }

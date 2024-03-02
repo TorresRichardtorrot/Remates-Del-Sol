@@ -11,7 +11,7 @@ interface RequestWithUser extends expresRequest {
   user: { email: string; user_Id: string; rol: string };
 }
 
-@Controller('auth')
+@Controller('api/auth')
 export class AuthController {
   constructor(private authService: AuthService) {}
   @Post('register')

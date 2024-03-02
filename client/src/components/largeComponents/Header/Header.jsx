@@ -29,7 +29,7 @@ function Header({data}) {
     return (
         <header className={`main__header ${scrolling? 'header--active':""}`}>
             <Link className='main__header--logo' to={'/'}>
-                <img src="/src/assets/sol.png" alt="Logo de Remates El Sol" />
+                <img src="/sol.png" alt="Logo de Remates El Sol" />
             </Link>
             <nav className='main__header--nav'>
                 <ul className='header__nav--ul'>
@@ -54,21 +54,21 @@ function Header({data}) {
                                     <button onClick={()=>{
                                         setLanguage("Spanish")
                                     }}>
-                                        <img src="/src/assets/Spain.svg" alt="" />
+                                        <img src="/Spain.svg" alt="" />
                                     </button>   
                                 </li>
                                 <li>
                                     <button onClick={()=>{
                                         setLanguage("English")
                                     }}>
-                                        <img src="/src/assets/ingles.svg" alt="" />
+                                        <img src="/ingles.svg" alt="" />
                                     </button>
                                 </li>
                                 <li>
                                     <button onClick={()=>{
                                         setLanguage("Portuguese")
                                     }}>
-                                        <img src="/src/assets/Brazil.svg" alt="" />
+                                        <img src="/Brazil.svg" alt="" />
                                     </button>
                                 </li>
                             </ul>

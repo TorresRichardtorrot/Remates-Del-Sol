@@ -20,17 +20,17 @@ export default function Slider() {
         modules={[EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide> <img src="/src/assets/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/src/assets/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/src/assets/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/src/assets/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/src/assets/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/src/assets/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/src/assets/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/src/assets/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/src/assets/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/src/assets/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/src/assets/forcard.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
       </Swiper>
     </>
   );
