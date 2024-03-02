@@ -16,6 +16,8 @@ export class AuthService {
     private readonly usersService: UsersService,
     private readonly jwtService: JwtService,
   ) {}
+
+  //?Register
   async register({ email, password, username }: RegisterUserDto) {
     try {
       const userFound = await this.usersService.findOneByEmail(email);
@@ -24,17 +26,23 @@ export class AuthService {
         throw new BadRequestException('User already exists');
       }
 
-      return await this.usersService.create({
+      await this.usersService.create({
         email,
         password: await bcryptjs.hash(password, 10),
         username,
       });
+
+      return {
+        username,
+        email,
+      };
     } catch (error) {
       console.error(error);
       return error;
     }
   }
 
+  //?Login
   async login({ email, password }: LoginDto) {
     try {
       const userFound = await this.usersService.findOneByEmail(email);
@@ -48,13 +56,23 @@ export class AuthService {
         throw new UnauthorizedException('incorrect credentials');
       }
 
-      const payLoad = { userId: userFound._id, email: userFound.email };
+      const payLoad = {
+        user_Id: userFound._id,
+        email: userFound.email,
+        role: userFound.roles,
+      };
 
       const token = await this.jwtService.signAsync(payLoad);
-      return { userFound, token };
+      return { token };
     } catch (error) {
       console.error(error);
       return error;
     }
+  }
+
+  //?Profile
+  async profile({ email, role }: { email: string; role: string }) {
+    console.log(role);
+    return this.usersService.findOneByEmail(email);
   }
 }

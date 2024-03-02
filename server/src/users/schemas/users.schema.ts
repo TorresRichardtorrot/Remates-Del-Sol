@@ -32,7 +32,7 @@ class Users {
     enum: ['admin', 'client', 'superAdmin'],
     default: 'client',
   })
-  rol: string;
+  roles: string;
 }
 
 export const UsersSchema = SchemaFactory.createForClass(Users);
