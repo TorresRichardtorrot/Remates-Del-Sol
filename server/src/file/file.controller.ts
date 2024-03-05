@@ -1,27 +1,35 @@
 import {
+  // Body,
   Controller,
+  // Delete,
   Post,
   UploadedFiles,
   UseInterceptors,
 } from '@nestjs/common';
 import { FilesInterceptor } from '@nestjs/platform-express';
-import { diskStorage } from 'multer';
+import { storage } from './helpers/storage.helper';
+import { fileFilter } from './helpers/fileFilter.helper';
+import { Auth } from 'src/auth/decorators/auth.decorator';
+import { Role } from 'src/auth/enums/rol.enum';
+import { FileService } from './file.service';
 
 @Controller('api/upload')
 export class FileController {
+  constructor(private fileService: FileService) {}
   @Post()
+  @Auth(Role.SUPER_ADMIN)
   @UseInterceptors(
     FilesInterceptor('array', 10, {
-      storage: diskStorage({
-        destination: '../../public/img',
-        filename(req: any, file:Express.Multer.File[], callback) {
-            
-        },
-      }),
+      storage: storage,
+      fileFilter: fileFilter,
     }),
   )
-  async uploadFiles(@UploadedFiles() files: Array<Express.Multer.File>) {
-    console.log(files);
-    return 'hola';
+  async specialAuctionFile(@UploadedFiles() files: Array<Express.Multer.File>) {
+    return this.fileService.saveFile(files);
   }
+
+  // @Delete()
+  // @Auth(Role.SUPER_ADMIN)
+  // async deleteImage(@Body() : {pathImage :string}){
+  // }
 }

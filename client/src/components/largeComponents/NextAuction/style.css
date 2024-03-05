@@ -9,13 +9,23 @@
     font-size: 3rem;
 }
 .separador{
+    position: relative;
     height: 400px;
     width: 100%;
     margin: 40px 0;
-    background-image: url('/hero.png');
+    background-image: url('/public/hero-n.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+.separador::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.541);
 }
 .title__section__main{
     position: absolute;

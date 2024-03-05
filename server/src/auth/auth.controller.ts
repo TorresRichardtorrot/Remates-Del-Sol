@@ -8,7 +8,7 @@ import { Role } from './enums/rol.enum';
 import { Auth } from './decorators/auth.decorator';
 
 interface RequestWithUser extends expresRequest {
-  user: { email: string; user_Id: string; rol: string };
+  user: { email: string; user_Id: string; role: string };
 }
 
 @Controller('api/auth')
@@ -52,7 +52,6 @@ export class AuthController {
   ) {
     return this.authService.profile({
       email: req.user.email,
-      role: req.user.rol,
     });
   }
 }

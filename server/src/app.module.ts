@@ -8,7 +8,9 @@ import { AuthModule } from './auth/auth.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { FileModule } from './file/file.module';
-
+import { EmailModule } from './email/email.module';
+import { AuctionsModule } from './auctions/auctions.module';
+import mongoose from 'mongoose';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -16,12 +18,28 @@ import { FileModule } from './file/file.module';
       isGlobal: true,
     }),
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '../../', 'client', 'dist'),
+      serveRoot: '/public',
+      rootPath: join(__dirname, '..', 'public'),
     }),
-    MongooseModule.forRoot(process.env.MONGO_URI),
+    ServeStaticModule.forRoot({
+      serveRoot: '/',
+      rootPath: join(__dirname, '../../client/dist/', 'index.html'),
+    }),
+    MongooseModule.forRootAsync({
+      useFactory: async () => {
+        const uri = process.env.MONGO_URI;
+        await mongoose.connect(uri);
+        console.log('*** Connected Database ***');
+        return {
+          uri: uri,
+        };
+      },
+    }),
+    AuctionsModule,
     AuthModule,
     UsersModule,
     FileModule,
+    EmailModule,
   ],
   controllers: [AppController],
   providers: [AppService],

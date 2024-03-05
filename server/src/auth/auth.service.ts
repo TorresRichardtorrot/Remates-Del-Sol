@@ -71,8 +71,13 @@ export class AuthService {
   }
 
   //?Profile
-  async profile({ email, role }: { email: string; role: string }) {
-    console.log(role);
-    return this.usersService.findOneByEmail(email);
+  async profile({ email }: { email: string }) {
+    const userFound = await this.usersService.findOneByEmail(email);
+    return {
+      _id: userFound._id,
+      username: userFound.username,
+      email: userFound.email,
+      roles: userFound.roles,
+    };
   }
 }
