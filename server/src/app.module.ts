@@ -12,7 +12,7 @@ import { EmailModule } from './email/email.module';
 import { AuctionsModule } from './auctions/auctions.module';
 import mongoose from 'mongoose';
 
-console.log(join(__dirname, '..', '..', '/client/dist'));
+// console.log(join(__dirname, '..', '..', '/client/dist'));
 
 @Module({
   imports: [
