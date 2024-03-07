@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import './style.css'
+import MainButton from '../../smallComponents/MainButton/MainButton';
 function Contact({data}) {
     return (
         <section className='contact container' id='contact'>
@@ -11,11 +12,11 @@ function Contact({data}) {
                         <div className='container__input'>
                             <div className='box__input'>
                                 
-                                <input type="text" name='name' id='name' autoComplete='true'/>
+                                <input type="text" name='name' id='name' autoComplete='true' placeholder='Torres Richard'/>
                                 <label htmlFor="name">{data.label_name}</label>
                             </div>
                             <div className='box__input'>
-                                <input type="email" name='email' id='email' autoComplete='true'/>
+                                <input type="email" name='email' id='email' autoComplete='true' placeholder='exampe@gmail.com'/>
                                 <label htmlFor="email">{data.label_email}</label>
                             </div>
                         </div>
@@ -24,9 +25,7 @@ function Contact({data}) {
                             <textarea name="message" id="message" cols="30" rows="10">
                             </textarea>
                         </div>
-                        <button>
-                            Enviar
-                        </button>
+                        <MainButton text={'Enviar'} type={'submit'}/>
                     </form>
                 </section>
                 <div className='contact__map'>
