@@ -21,10 +21,10 @@ export default function SliderNext() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><img src="/proximo.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/proximo.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/proximo2.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="/proximo2.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="/proximo.jpg"  loading='lazy' /></SwiperSlide>
+        <SwiperSlide><img src="/proximo.jpg"  loading='lazy' /></SwiperSlide>
+        <SwiperSlide><img src="/proximo2.jpg"  loading='lazy' /></SwiperSlide>
+        <SwiperSlide><img src="/proximo2.jpg"  loading='lazy' /></SwiperSlide>
 
         
         

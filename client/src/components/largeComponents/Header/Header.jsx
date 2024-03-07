@@ -54,21 +54,21 @@ function Header({data}) {
                                     <button onClick={()=>{
                                         setLanguage("Spanish")
                                     }}>
-                                        <img src="/Spain.svg" alt="" />
+                                        <img src="/Spain.svg" alt=""  loading='lazy' />
                                     </button>   
                                 </li>
                                 <li>
                                     <button onClick={()=>{
                                         setLanguage("English")
                                     }}>
-                                        <img src="/ingles.svg" alt="" />
+                                        <img src="/ingles.svg" alt=""  loading='lazy' />
                                     </button>
                                 </li>
                                 <li>
                                     <button onClick={()=>{
                                         setLanguage("Portuguese")
                                     }}>
-                                        <img src="/Brazil.svg" alt="" />
+                                        <img src="/Brazil.svg" alt=""   loading='lazy'/>
                                     </button>
                                 </li>
                             </ul>

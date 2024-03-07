@@ -6,16 +6,16 @@ function History({data}) {
             <h2>{data.title}</h2>
             <div className="history__img__info">
                 <div className="history__img">
-                    <img src="/logo-2.png" alt="logo" />
+                    <img src="/logo-2.png" alt="logo"  loading='lazy' />
                 </div>
                 <article className="history__info">
                     {
-                        data.info.map((value)=>{
+                        data.info.map((value,index)=>{
                             return(
-                                <>
+                                <div key={index}>
                                     <h3>{value.title}</h3>
                                     <p>{value.text}</p>
-                                </>
+                                </div>
                             )
                         })
                     }

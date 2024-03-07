@@ -20,17 +20,17 @@ export default function Slider() {
         modules={[EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide> <img src="/forcard.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="render" loading='lazy' /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="render" loading='lazy' /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="render" loading='lazy' /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="render" loading='lazy' /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="render" loading='lazy' /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="render" loading='lazy' /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="render" loading='lazy' /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="render" loading='lazy' /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="render" loading='lazy' /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="render" loading='lazy' /></SwiperSlide>
+        <SwiperSlide> <img src="/forcard.jpg" alt="render" loading='lazy' /></SwiperSlide>
       </Swiper>
     </>
   );

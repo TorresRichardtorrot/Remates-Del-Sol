@@ -7,12 +7,12 @@ function About({data}) {
         <section className="about container">
             <article className='about__info'>
               {
-                data.info.map((value)=>{
+                data.info.map((value,index)=>{
                   return(
-                    <>
+                    <div key={index}>
                       <h2>{value.title}</h2>
                       <p>{value.info}</p>
-                    </>
+                    </div>
                   )
   
                 })

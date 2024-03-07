@@ -11,6 +11,9 @@ import { FileModule } from './file/file.module';
 import { EmailModule } from './email/email.module';
 import { AuctionsModule } from './auctions/auctions.module';
 import mongoose from 'mongoose';
+
+console.log(join(__dirname, '..', '..', '/client/dist'));
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -22,8 +25,7 @@ import mongoose from 'mongoose';
       rootPath: join(__dirname, '..', 'public'),
     }),
     ServeStaticModule.forRoot({
-      serveRoot: '/',
-      rootPath: join(__dirname, '../../client/dist/', 'index.html'),
+      rootPath: join(__dirname, '../../', 'client', 'dist', 'index.html'),
     }),
     MongooseModule.forRootAsync({
       useFactory: async () => {
